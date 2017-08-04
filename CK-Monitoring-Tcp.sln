@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeCakeBuilder", "CodeCakeBuilder", "{B4398CC3-580A-4B02-B972-9CE970EAD0D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCakeBuilder", "CodeCakeBuilder\CodeCakeBuilder.csproj", "{FD4817B6-3CD7-4E74-AA10-7CA95FDFCF2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{6F384325-2DEB-4AF2-AB0E-5A2D93CD0568}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		CONTRIBUTING.md = CONTRIBUTING.md
+		LICENSE.md = LICENSE.md
+		NuGet.config = NuGet.config
+		README.md = README.md
+		RepositoryInfo.xml = RepositoryInfo.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{08D6C3FD-3204-4214-A5C4-D714DB7FA790}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CK.Monitoring.Tcp.Tests", "Tests\CK.Monitoring.Tcp.Tests\CK.Monitoring.Tcp.Tests.csproj", "{D327C3FF-8D79-42A5-9D15-52FE77C01986}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD4817B6-3CD7-4E74-AA10-7CA95FDFCF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4817B6-3CD7-4E74-AA10-7CA95FDFCF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4817B6-3CD7-4E74-AA10-7CA95FDFCF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4817B6-3CD7-4E74-AA10-7CA95FDFCF2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D327C3FF-8D79-42A5-9D15-52FE77C01986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D327C3FF-8D79-42A5-9D15-52FE77C01986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D327C3FF-8D79-42A5-9D15-52FE77C01986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D327C3FF-8D79-42A5-9D15-52FE77C01986}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FD4817B6-3CD7-4E74-AA10-7CA95FDFCF2D} = {B4398CC3-580A-4B02-B972-9CE970EAD0D2}
+		{D327C3FF-8D79-42A5-9D15-52FE77C01986} = {08D6C3FD-3204-4214-A5C4-D714DB7FA790}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EED16761-55C6-47F3-822B-E498C88DE318}
+	EndGlobalSection
+EndGlobal
