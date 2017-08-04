@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.0
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeCakeBuilder", "CodeCakeBuilder", "{B4398CC3-580A-4B02-B972-9CE970EAD0D2}"
 EndProject
@@ -23,6 +23,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{08D6C3FD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CK.Monitoring.Tcp.Tests", "Tests\CK.Monitoring.Tcp.Tests\CK.Monitoring.Tcp.Tests.csproj", "{D327C3FF-8D79-42A5-9D15-52FE77C01986}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CK.Monitoring.Tcp.Handler", "CK.Monitoring.Tcp.Handler\CK.Monitoring.Tcp.Handler.csproj", "{48BE0D8F-131B-462E-8135-743EE4369635}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CK.Monitoring.Tcp.Server", "CK.Monitoring.Tcp.Server\CK.Monitoring.Tcp.Server.csproj", "{0894578D-C827-48B8-8D4C-93863B093857}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{EC0582DB-7B75-4C7F-BE4A-D97D5BBB0763}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +43,14 @@ Global
 		{D327C3FF-8D79-42A5-9D15-52FE77C01986}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D327C3FF-8D79-42A5-9D15-52FE77C01986}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D327C3FF-8D79-42A5-9D15-52FE77C01986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48BE0D8F-131B-462E-8135-743EE4369635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48BE0D8F-131B-462E-8135-743EE4369635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48BE0D8F-131B-462E-8135-743EE4369635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48BE0D8F-131B-462E-8135-743EE4369635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0894578D-C827-48B8-8D4C-93863B093857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0894578D-C827-48B8-8D4C-93863B093857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0894578D-C827-48B8-8D4C-93863B093857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0894578D-C827-48B8-8D4C-93863B093857}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <RootNamespace>CK.Monitoring.Tcp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CK.ControlChannel.Tcp.Server" Version="0.1.0-a00-00-develop-0003" />
+    <PackageReference Include="CK.Monitoring" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>
