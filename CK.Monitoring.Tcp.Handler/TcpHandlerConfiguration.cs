@@ -116,9 +116,9 @@ namespace CK.Monitoring.Tcp.Handler
 
             if( PresentMonitoringAssemblyInformation )
             {
-                AddAssemblyInformation( dict, typeof( TcpHandlerConfiguration ).AssemblyQualifiedName );
-                AddAssemblyInformation( dict, typeof( GrandOutput ).AssemblyQualifiedName );
-                AddAssemblyInformation( dict, typeof( LogLevel ).AssemblyQualifiedName );
+                AddAssemblyInformation( dict, typeof( TcpHandlerConfiguration ) );
+                AddAssemblyInformation( dict, typeof( GrandOutput ) );
+                AddAssemblyInformation( dict, typeof( LogLevel ) );
             }
 
             if( PresentEnvironmentVariables )
@@ -132,19 +132,19 @@ namespace CK.Monitoring.Tcp.Handler
             return dict;
         }
 
-        private static void AddAssemblyInformation( Dictionary<string, string> dict, string assemblyQualifiedName )
+        private static void AddAssemblyInformation( Dictionary<string, string> dict, Type t )
         {
-            AssemblyName an = new AssemblyName( assemblyQualifiedName );
+            AssemblyName an = t.GetTypeInfo().Assembly.GetName();
             dict[$"ASSEMBLY:{an.Name}"] = an.FullName;
         }
 
         public void AddAssemblyInformationFromType( Type t )
         {
-            if( AdditionalAuthenticationData == null)
+            if( AdditionalAuthenticationData == null )
             {
                 AdditionalAuthenticationData = new Dictionary<string, string>();
             }
-            AddAssemblyInformation( AdditionalAuthenticationData, t.AssemblyQualifiedName );
+            AddAssemblyInformation( AdditionalAuthenticationData, t );
         }
     }
 }
