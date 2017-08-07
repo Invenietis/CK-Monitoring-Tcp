@@ -1,4 +1,4 @@
-﻿using CK.Core;
+using CK.Core;
 using CK.Monitoring.Handlers;
 using System;
 using System.IO;
@@ -24,10 +24,10 @@ namespace CK.Monitoring.Tcp.Handler.Demo
                         doContinue = false;
                         break;
                     case ConsoleKey.M:
-                        m.Info( "Hello world" );
+                        m.Info( $"Hello world - {DateTime.Now.ToString( "R" )} - {Guid.NewGuid()}" );
                         break;
                     case ConsoleKey.S:
-                        new SystemActivityMonitor( false, "Test" ).Error( "E R R O R" );
+                        new SystemActivityMonitor( false, "Test" ).Error( $"CriticalError - {DateTime.Now.ToString( "R" )}" );
                         break;
                     default:
                         m.Warn( $"Unknown key {k.Key}" );

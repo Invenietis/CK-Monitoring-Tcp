@@ -1,4 +1,4 @@
-﻿using Cake.Common.Build;
+using Cake.Common.Build;
 using Cake.Common.Diagnostics;
 using Cake.Common.IO;
 using Cake.Common.Solution;
@@ -63,7 +63,10 @@ namespace CodeCake
 
             // We do not publish .Tests projects for this solution.
             var projectsToPublish = projects
-                                        .Where(p => !p.Path.Segments.Contains("Tests"));
+                                        .Where(p =>
+                                            !p.Path.Segments.Contains( "Tests" )
+                                            && !p.Path.Segments.Contains( "Demo" )
+                                        );
 
             SimpleRepositoryInfo gitInfo = Cake.GetSimpleRepositoryInfo();
 
