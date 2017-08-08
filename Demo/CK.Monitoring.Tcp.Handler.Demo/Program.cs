@@ -41,7 +41,7 @@ namespace CK.Monitoring.Tcp.Handler.Demo
         private static void SetupActivityMonitor()
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
-            ActivityMonitor.DefaultFilter = new LogFilter( LogLevelFilter.Info, LogLevelFilter.Info );
+            ActivityMonitor.DefaultFilter = LogFilter.Debug;
             ActivityMonitor.AutoConfiguration += ( monitor ) =>
             {
                 monitor.Output.RegisterClient( new ActivityMonitorConsoleClient() );
