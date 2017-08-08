@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CK.ControlChannel.Tcp.Client" Version="0.1.0-a00-00-develop-0003" />
+    <PackageReference Include="CK.ControlChannel.Tcp.Client" Version="0.1.0-a00-00-develop-0004" />
     <PackageReference Include="CK.Monitoring" Version="7.0.0" />
     <PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
   </ItemGroup>
